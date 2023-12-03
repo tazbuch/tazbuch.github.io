@@ -9,7 +9,7 @@ body {
 }
 
 .fixed-background {
-    background-image: url('https://tazbuch.space/targettrey.png');
+    background-image: url('https://tazbuch.space/media/targettrey.png');
     background-size: cover;
     position: relative;
     background-attachment: fixed;
