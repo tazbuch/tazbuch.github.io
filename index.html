@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>tazbuch loves her!</title>
-    <link rel="icon" type="image/x-icon" href="/images/snek.png">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png">
     <!-- embed title -->
     <meta content="tazbuch loves her!" property="og:title" />
     <!-- embed description -->
-    <meta content="who loves getting raped?? I SURE DO!!!" property="og:description" />
+    <meta content="tazbuch#2176/@tazbuch on the cord" property="og:description" />
     <!-- embed link -->
     <meta content="https://tazbuch.space/" property="og:url" />
     <!-- embed image -->
-    <meta content="https://capl.tech/images/snek.png" property="og:image" />
+    <meta content="/media/favicon.png" property="og:image" />
     <!-- embed color -->
     <meta content="#36c2bd" data-react-helmet="true" name="theme-color" />
 </head>
@@ -38,7 +38,7 @@
 
             const text = document.createElement('input');
             text.type = 'text';
-            text.placeholder = 'Pray, who advances? State the secret word, if you please.';
+            text.placeholder = 'enter the secret key, fella!';
             
             textBefore.replaceWith(text);
         
@@ -70,6 +70,18 @@
                         } else if (videoBackground.msRequestFullscreen) { 
                             videoBackground.msRequestFullscreen(); // ie fullscreen
                         }
+                    } else if (text.value == 'sophia') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/sophmiamor.png")';
+                    } else if (text.value == 'gorgeous') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/sophmiamor.png")';
+                    } else if (text.value == 'beautiful') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/sophmiamor.png")';
+                    } else if (text.value == 'soph') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/sophmiamor.png")';
+                    } else if (text.value == 'capl') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/capl.techontop.png")';
+                    } else if (text.value == 'nick') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/capl.techontop.png")';
                     } else {
                         text.replaceWith(textBefore);
                     }
