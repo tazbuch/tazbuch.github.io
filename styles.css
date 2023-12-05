@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Starborn&display=swap');
 
 body {
     margin: 0;
@@ -21,7 +20,7 @@ body {
 }
 
 .text {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Starborn', Arial, sans-serif;
     font-size: 50px;
     font-weight: bold;
     text-shadow: 2px 2px 4px #000000;
