@@ -28,10 +28,7 @@ capl
 nick
 
 
-discord
 
 
-server
 
 
-username
