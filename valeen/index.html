@@ -1,36 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>socials!</title>
-        <link rel="icon" type="image/x-icon" href="https://tazbuch.space/media/valeenlogo.gif">
-        <!-- embed title -->
-        <meta content="tazbuch's socials" property="og:title" />
-        <!-- embed description -->
-        <meta content="socials" property="og:description" />
-        <!-- embed link -->
-        <meta content="https://tazbuch.space/" property="og:url" />
-        <!-- embed image -->
-        <meta content="tazbuch.space/media/valeenlogo.gif" property="og:image" />
-        <!-- embed color -->
-        <meta content="#36c2bd" data-react-helmet="true" name="theme-color" />
 <head>
-    <!-- Link to the Starborn font on a CDN (example) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Starborn&display=swap">
-
-    <!-- Link to your style.css file -->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>tazbuch loves her!</title>
+    <link rel="icon" type="image/x-icon" href="https://tazbuch.space/media/favicon.png">
+    <!-- embed title -->
+    <meta content="tazbuch loves her!" property="og:title" />
+    <!-- embed description -->
+    <meta content="tazbuch#2176/@tazbuch on the cord" property="og:description" />
+    <!-- embed link -->
+    <meta content="https://tazbuch.space/" property="og:url" />
+    <!-- embed image -->
+    <meta content="/media/favicon.png" property="og:image" />
+    <!-- embed color -->
+    <meta content="#36c2bd" data-react-helmet="true" name="theme-color" />
 </head>
-<body style="font-family: 'Starborn', Arial, sans-serif;">
-    <img id="logo" src="https://tazbuch.space/media/valeenlogo.gif" alt="Logo">
-    <div id="title">Valeen</div>
-    <div id="text">Valeen is a image hosting website brought to you by Tazbuch and Capl/Nick. You can use Valeen with ShareX config or Flameshot script. If you want to use Valeen contact me(tazbuch) on discord my username is tazbuch#2176</div>
+<style>
+    #video-background {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    }   
+</style>
+<body>
+    <script>
+        function text() {
+            const textBefore = document.getElementById('special');
+            const background = document.getElementById('bleh');
+            const videoBackground = document.getElementById('video-background');
 
-    <a href="https://valeen.tazbuch.space/" target="_blank"><img class="icon" src="https://tazbuch.space/icons/valeenlogo.gif" alt="valeen"></a>
-
+            const text = document.createElement('input');
+            text.type = 'text';
+            text.placeholder = 'enter the secret key, fella!';
+            
+            textBefore.replaceWith(text);
+        
+            document.onkeydown = function(e) {
+                if (e.keyCode == 13) {
+                    if (text.value == 'spederman') {
+                        videoBackground.src = 'https://tazbuch.space/media/sped.mp4'
+                        background.replaceWith(videoBackground)
+                        videoBackground.style.display = 'block';
+                        videoBackground.play();
+                        if (videoBackground.requestFullscreen) {
+                            videoBackground.requestFullscreen(); // normal fullscreen
+                        } else if (videoBackground.webkitRequestFullscreen) { 
+                            videoBackground.webkitRequestFullscreen(); // safari fullscreen
+                        } else if (videoBackground.msRequestFullscreen) { 
+                            videoBackground.msRequestFullscreen(); // ie fullscreen
+                        }
+                    } else if (text.value == 'adminplace') {
+                        document.body.innerHTML = "ip logged"
+                    } else if (text.value == 'didyoupray') {
+                        videoBackground.src = 'https://tazbuch.space/media/didyoupray.mp4'
+                        background.replaceWith(videoBackground)
+                        videoBackground.style.display = 'block';
+                        videoBackground.play();
+                        if (videoBackground.requestFullscreen) {
+                            videoBackground.requestFullscreen(); // normal fullscreen
+                        } else if (videoBackground.webkitRequestFullscreen) { 
+                            videoBackground.webkitRequestFullscreen(); // safari fullscreen
+                        } else if (videoBackground.msRequestFullscreen) { 
+                            videoBackground.msRequestFullscreen(); // ie fullscreen
+                        }
+                    } else if (text.value == 'sophia') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/miamor.png")';
+                    } else if (text.value == 'gorgeous') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/exopspic.png")';
+                    } else if (text.value == 'exops') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/exopspic.png")';
+                    } else if (text.value == 'soph') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/miamor.png")';
+                    } else if (text.value == 'capl') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/capl.techontop.png")';
+                    } else if (text.value == 'nick') {
+                        background.style.backgroundImage = 'url("https://tazbuch.space/media/capl.techontop.png")';
+                    } else {
+                        text.replaceWith(textBefore);
+                    }
+                }
+            }
+        }
+        
+    </script>
+    <div class="fixed-background" id="bleh">
+        <video id="video-background" loop muted>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p id="special" class="text" onclick="text()">tazbuch</p>
+        <a class="text" href="https://valeen.tazbuch.space" target="_blank">Valeen is a image hosting website brought to you by Tazbuch and Capl/Nick. You can use Valeen with ShareX config or Flameshot script. If you want to use Valeen contact me(tazbuch) on discord my username is tazbuch#2176</a>
+        </div>
+        <a class="text" href="https://valeen.tazbuch.space" target="_blank">Valeen, a ShareX and Flameshot image hoster, brought to you by Tazbuch and Capl!</a>
+        <a href="https://valeen.tazbuch.space" target="_blank"><img class="icon" src="https://tazbuch.space/icons/valeenlogo.gif" alt="Valeen"></a>
+        <footer>
+            <a href="mailto:tazbuch@tazbuch.space">tazbuch@tazbuch.space</a>
+        </footer>
+    </div>
 </body>
 </html>
+  
