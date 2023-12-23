@@ -1,108 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>tazbuch</title>
-    <link rel="icon" type="image/x-icon" href="https://tazbuch.space/media/favicon.png">
-    <!-- embed title -->
-    <meta content="tazbuch" property="og:title" />
-    <!-- embed description -->
-    <meta content="tazbuch#2176/@tazbuch on the cord" property="og:description" />
-    <!-- embed link -->
-    <meta content="https://tazbuch.space/" property="og:url" />
-    <!-- embed image -->
-    <meta content="/media/favicon.png" property="og:image" />
-    <!-- embed color -->
-    <meta content="#36c2bd" data-react-helmet="true" name="theme-color" />
+<html><head>
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1168740602825949267/1188180787154128997/tazbuchpfp.png?ex=65999696&is=65872196&hm=33a50cd61fab17851bab84aa4c93f760d04f2ed9d2dbb0f1f0a3b9576b65c705&">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tazbuch.space">
+    <meta property="og:title" content="Error 404 | Redirecting to the correct URL">
+    <meta property="og:description" content="tazbuch.space">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1168740602825949267/1188180787154128997/tazbuchpfp.png?ex=65999696&is=65872196&hm=33a50cd61fab17851bab84aa4c93f760d04f2ed9d2dbb0f1f0a3b9576b65c705&">
+    <meta property="og:image:alt" content="image">
+    <title>Error 404 | Redirecting to the correct URL</title>
 </head>
-<style>
-    #video-background {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    }   
-</style>
 <body>
-    <script>
-        function text() {
-            const textBefore = document.getElementById('special');
-            const background = document.getElementById('bleh');
-            const videoBackground = document.getElementById('video-background');
 
-            const text = document.createElement('input');
-            text.type = 'text';
-            text.placeholder = 'enter the secret key, fella!';
-            
-            textBefore.replaceWith(text);
-        
-            document.onkeydown = function(e) {
-                if (e.keyCode == 13) {
-                    if (text.value == 'spederman') {
-                        videoBackground.src = 'https://tazbuch.space/media/sped.mp4'
-                        background.replaceWith(videoBackground)
-                        videoBackground.style.display = 'block';
-                        videoBackground.play();
-                        if (videoBackground.requestFullscreen) {
-                            videoBackground.requestFullscreen(); // normal fullscreen
-                        } else if (videoBackground.webkitRequestFullscreen) { 
-                            videoBackground.webkitRequestFullscreen(); // safari fullscreen
-                        } else if (videoBackground.msRequestFullscreen) { 
-                            videoBackground.msRequestFullscreen(); // ie fullscreen
-                        }
-                    } else if (text.value == 'adminplace') {
-                        document.body.innerHTML = "ip logged"
-                    } else if (text.value == 'didyoupray') {
-                        videoBackground.src = 'https://tazbuch.space/media/didyoupray.mp4'
-                        background.replaceWith(videoBackground)
-                        videoBackground.style.display = 'block';
-                        videoBackground.play();
-                        if (videoBackground.requestFullscreen) {
-                            videoBackground.requestFullscreen(); // normal fullscreen
-                        } else if (videoBackground.webkitRequestFullscreen) { 
-                            videoBackground.webkitRequestFullscreen(); // safari fullscreen
-                        } else if (videoBackground.msRequestFullscreen) { 
-                            videoBackground.msRequestFullscreen(); // ie fullscreen
-                        }
-                    } else if (text.value == 'sophia') {
-                        background.style.backgroundImage = 'url("https://tazbuch.space/media/miamor.png")';
-                    } else if (text.value == 'gorgeous') {
-                        background.style.backgroundImage = 'url("https://tazbuch.space/media/exopspic.png")';
-                    } else if (text.value == 'exops') {
-                        background.style.backgroundImage = 'url("https://tazbuch.space/media/exopspic.png")';
-                    } else if (text.value == 'soph') {
-                        background.style.backgroundImage = 'url("https://tazbuch.space/media/miamor.png")';
-                    } else if (text.value == 'capl') {
-                        background.style.backgroundImage = 'url("https://tazbuch.space/media/capl.techontop.png")';
-                    } else if (text.value == 'nick') {
-                        background.style.backgroundImage = 'url("https://tazbuch.space/media/capl.techontop.png")';
-                    } else {
-                        text.replaceWith(textBefore);
-                    }
-                }
-            }
+<!-- Diplaying a fake 404 page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            line-height: 1.2;
+            margin: 0;
         }
-        
-    </script>
-    <div class="fixed-background" id="bleh">
-        <video id="video-background" loop muted>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p id="special" class="text" onclick="text()">tazbuch</p>
-        <a class="text" href="https://tazuch.space/games" target="_blank">game site</a>
-        </div>
-        <a class="text" href="real??" target="_blank">Valeen, a ShareX and Flameshot image hoster, brought to you by Tazbuch and Capl</a>
-        <a href="https://valeen.tazbuch.space" target="_blank"><img class="icon" src="https://tazbuch.space/icons/valeenlogo.gif" alt="Valeen"></a>
-        <footer>
-            <a href="mailto:tazbuch@tazbuch.space">tazbuch@tazbuch.space</a>
-        </footer>
-    </div>
-</body>
-</html>
+
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+
+
+    <img src="https://cdn.discordapp.com/attachments/1168740602825949267/1188180787154128997/tazbuchpfp.png?ex=65999696&is=65872196&hm=33a50cd61fab17851bab84aa4c93f760d04f2ed9d2dbb0f1f0a3b9576b65c705&" alt="Skibi Rizy">
+    <h1>hello</h1>
+    <p>my name tazbuch</p>
+
+
+
+ </body></html>
