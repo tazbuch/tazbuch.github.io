@@ -1,0 +1,31 @@
+
+{
+    "expo": {
+      "name": "Kable",
+      "slug": "kable",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "https://github.com/tazbuch/tazbuch.github.io/tree/main/taz/media/kable.png",
+      "userInterfaceStyle": "light",
+      "splash": {
+        "image": "https://github.com/tazbuch/tazbuch.github.io/tree/main/taz/media/kable.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      },
+      "assetBundlePatterns": ["**/*"],
+      "ios": {
+        "supportsTablet": true
+      },
+      "android": {
+        "adaptiveIcon": {
+          "foregroundImage": ".https://github.com/tazbuch/tazbuch.github.io/tree/main/taz/media/kable.png",
+          "backgroundColor": "#ffffff"
+        }
+      },
+      "web": {
+        "bundler": "metro",
+        "favicon": "https://github.com/tazbuch/tazbuch.github.io/tree/main/taz/media/kable.png"
+      }
+    }
+  }        
+          

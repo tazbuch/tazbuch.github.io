@@ -3,8 +3,8 @@ import { SafeAreaView, View, Text, Image, TouchableOpacity, StyleSheet } from 'r
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const App = () => {
-  const imageUrl = 'https://via.placeholder.com/150';
-  const [audio] = useState(new Audio('https://example.com/path/to/your/music.mp3'));
+  const imageUrl = 'https://cdn.discordapp.com/attachments/846827486481743908/1191163418330267769/2finga.png?ex=65a47061&is=6591fb61&hm=109cb2c4538c1ddfde1db3fa18b131d4659cc531fd6293ae3c34ed66668192cb&';
+  const [audio] = useState(new Audio('https://github.com/tazbuch/tazbuch.github.io/tree/main/taz/media/music.mp3'));
  
   useEffect(() => {
     audio.play().catch(() => console.log('Audio play failed'));
