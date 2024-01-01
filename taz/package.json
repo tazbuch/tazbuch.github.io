@@ -1,0 +1,36 @@
+{
+    "name": "tazbuch.space",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "npm start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web"
+    },
+    "private": true,
+    "dependencies": {
+      "babel-plugin-react-native-web": "0.19.8",
+      "react-native-vector-icons": "latest",
+      "react-native-svg": "latest",
+      "react": "latest",
+      "react-native": "latest",
+      "react-scripts": "latest",
+      "react-native-safe-area-context": "latest",
+      "react-dom": "latest",
+      "@react-navigation/native": "latest",
+      "@react-navigation/stack": "latest",
+      "axios": "latest",
+      "tailwind-rn": "latest",
+      "lodash": "latest",
+      "firebase": "latest",
+      "react-native-web": "latest",
+      "react-native-cli": "latest",
+      "react-native-elements": "latest",
+      "react-native-gesture-handler": "latest",
+      "react-native-reanimated": "latest",
+      "react-native-screens": "latest",
+      "react-native-paper": "latest"
+    },
+    "devDependencies": {}
+  }
