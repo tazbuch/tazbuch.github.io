@@ -1,94 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>tazbuch&nbsp;</title>
+  <link rel="icon" href="profile.png">
+  <style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tazbuch</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background: url('https://cdn.discordapp.com/attachments/846827486481743908/1191848698418823168/IMG_3756.jpg?ex=65a6ee99&is=65947999&hm=5fa5e509c071ef38ccb3329b3edb1b174e967ff61afb286d31a69e534a78b0cc&') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        video {
-            width: 60%;
-            max-width: 800px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        p {
-            text-align: center;
-            color: white;
-            font-size: 24px;
-            margin-top: 20px;
-            text-shadow: 2px 2px 4px black;
-            margin-left: 20px; /* Adjusted left margin */
-        }
-
-        #cover {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* Adjust the transparency */
-            backdrop-filter: blur(10px); /* Adjust the blur effect */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            cursor: pointer;
-        }
-
-        #cover-text {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .content-container {
-            display: none;
-        }
-    </style>
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url("https://github.com/tazbuch/tazbuch.github.io/blob/main/media/targettrey.png?raw=true");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+::selection {
+  color: white;
+}
+.container {
+  background-color: rgb(80, 80, 80, 0.1);
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 300px;
+  width: 250px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: auto;
+}
+.username {
+  font-size: 24px;
+  color: white;
+  transform: translateY(150px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.description {
+  font-size: 14px;
+  color: rgb(255, 255, 255, 0.4);
+  transform: translateY(150px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.discordstatus {
+  font-size: 14px;
+  transform: translateY(150px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.cover {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  position: fixed;
+  text-align: center;
+  background-color: rgb(80, 80, 80, 0.1);
+  backdrop-filter: blur(16px);
+  transition: opacity .5s;
+  z-index: 300;
+}
+.cover:hover {
+  cursor: pointer;
+}
+.click-to-enter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  text-shadow: 0px 0px 10px white;
+}
+.testing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 32px;
+  text-align: center;
+}
+  </style>
 </head>
 
-<body class="w3-white">
-    <!-- Cover -->
-    <div id="cover" onclick="OnEnter()">
-        <p id="cover-text">click to enter.</p>
-    </div>
+<body>
+  <div class="cover" onclick="Onenter();">
+    <a class="click-to-enter">Click to enter</a>
+  </div>
+  <div class="container">
+    <audio id="audio" autoplay="" loop="">
+      <source src="https://cdn.discordapp.com/attachments/846827486481743908/1191878537653788832/audio.mp3?ex=65a70a63&is=65949563&hm=b87b698cae73b28b5bff5cd626e89b9ee527c865ab0165ab770f3d63e66f13d0&" type="audio/mp4">
+    </audio>
+    <img src="https://cdn.discordapp.com/attachments/846827486481743908/1191848698418823168/IMG_3756.jpg?ex=65a6ee99&is=65947999&hm=5fa5e509c071ef38ccb3329b3edb1b174e967ff61afb286d31a69e534a78b0cc&" class="profile">
+    <a class="username">Tazbuch</a> <br><br>
+    <a class="discordstatus"><span style="color:green;">online</span></a><br><br>
+    <a class="description">be careful who you trust. the devil used to be a angel.</a>
+  </div>
 
-    <!-- Content container -->
-    <div class="content-container">
-        <video id="myVideo" controls loop autoplay>
-            <source src="https://cdn.discordapp.com/attachments/846827486481743908/1191565268745453588/i_be_poppin_bottles_sparkles_and_champagne.mp4?ex=65a5e6a2&amp;is=659371a2&amp;hm=52a7a30171ca2f264c414dfde7667ad791e2c1ffa17db620c9d6759cea706f9b&amp;" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>I BE POPPIN🔥</p>
-    </div>
+<script>
+  var clickenterthingy = document.querySelector(".cover");
+  function Onenter() {
+    clickenterthingy.style.opacity = 0;
+    clickenterthingy.addEventListener('transitionend', function(event) {
+      if (event.propertyName === 'opacity') {
+        clickenterthingy.remove();
+        var bgAudio = document.getElementById("audio"); 
+        audio.play();
 
-    <script>
-        function OnEnter() {
-            var cover = document.getElementById('cover');
-            var contentContainer = document.querySelector('.content-container');
-
-            // Hide the cover
-            cover.style.display = 'none';
-
-            // Show the content container
-            contentContainer.style.display = 'block';
+        var discordStatus = document.querySelector(".discordstatus");
+        if (discordStatus.innerHTML == "online") {
+          discordStatus.style.color = "green"
         }
-    </script>
-</body>
+        else if (iscordStatus.innerHTML == "offline") {
+          discordStatus.style.color = "red"
+        }
+      }
+    });
+    function updateTitle() {
+      document.title = document.title.substring(1) + document.title[0];
+      setTimeout(updateTitle, 500); 
+    }
 
-</html>
+    // Call the function to start the scrolling effect
+    updateTitle();
+  }
+  
+</script>
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+</body></html>
