@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background: url('https://cdn.discordapp.com/attachments/846827486481743908/1191163418330267769/2finga.png?ex=65a47061&is=6591fb61&hm=109cb2c4538c1ddfde1db3fa18b131d4659cc531fd6293ae3c34ed66668192cb&') no-repeat center center fixed;
+            background: url('https://cdn.discordapp.com/attachments/846827486481743908/1191848698418823168/IMG_3756.jpg?ex=65a6ee99&is=65947999&hm=5fa5e509c071ef38ccb3329b3edb1b174e967ff61afb286d31a69e534a78b0cc&') no-repeat center center fixed;
             background-size: cover;
             display: flex;
             align-items: center;
@@ -33,15 +33,62 @@
             text-shadow: 2px 2px 4px black;
             margin-left: 20px; /* Adjusted left margin */
         }
+
+        #cover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust the transparency */
+            backdrop-filter: blur(10px); /* Adjust the blur effect */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        #cover-text {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content-container {
+            display: none;
+        }
     </style>
 </head>
 
-<body>
-    <video autoplay controls loop>
-        <source src="https://cdn.discordapp.com/attachments/846827486481743908/1191565268745453588/i_be_poppin_bottles_sparkles_and_champagne.mp4?ex=65a5e6a2&is=659371a2&hm=52a7a30171ca2f264c414dfde7667ad791e2c1ffa17db620c9d6759cea706f9d&" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p>I BE POPPIN🔥</p>
+<body class="w3-white">
+    <!-- Cover -->
+    <div id="cover" onclick="OnEnter()">
+        <p id="cover-text">click to enter.</p>
+    </div>
+
+    <!-- Content container -->
+    <div class="content-container">
+        <video id="myVideo" controls loop autoplay>
+            <source src="https://cdn.discordapp.com/attachments/846827486481743908/1191565268745453588/i_be_poppin_bottles_sparkles_and_champagne.mp4?ex=65a5e6a2&amp;is=659371a2&amp;hm=52a7a30171ca2f264c414dfde7667ad791e2c1ffa17db620c9d6759cea706f9b&amp;" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>I BE POPPIN🔥</p>
+    </div>
+
+    <script>
+        function OnEnter() {
+            var cover = document.getElementById('cover');
+            var contentContainer = document.querySelector('.content-container');
+
+            // Hide the cover
+            cover.style.display = 'none';
+
+            // Show the content container
+            contentContainer.style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
