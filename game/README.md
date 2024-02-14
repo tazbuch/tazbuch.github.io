@@ -1,18 +1,27 @@
-# 3kh0.github.io V2
+# 3kh0 *lite*
 
-![GitHub Repo stars](https://img.shields.io/github/stars/3kh0/website-v2?color=yellow&label=Repo%20stars&logo=github&style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/3kh0/website-v2?logo=github&style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/3kh0/website-v2?logo=github&style=for-the-badge)
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/3kh0/website-v2?logo=codefactor&style=for-the-badge)
-### Deployments
-![Netlify](https://img.shields.io/netlify/e6a0c47e-feb6-4d00-85f5-4865130b58f5?label=netlify&logo=netlify&style=for-the-badge)
-![Website](https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_message=Online&url=https%3A%2F%2F3kh0.github.io)
-![Website](https://img.shields.io/website?down_color=red&down_message=Offline&label=Vercel&logo=vercel&style=for-the-badge&up_message=Online&url=https%3A%2F%2F3kh0.vercel.app%2F)
+![GitHub repo size](https://img.shields.io/github/repo-size/3kh0/3kh0-lite)
+![GitHub Repo stars](https://img.shields.io/github/stars/3kh0/3kh0-lite)
 
-## Preview
+Welcome to 3kh0 lite, a lightweight, fast, and clean game site.
 
-You can preview the current state of the projects with the link below:
+## Features
+- No tracking
+- No ads
+- No bloat
+- Obama approves 👍
 
-https://3kh0.github.io/website-v2/
+## Get your own copy
 
-## 
+This is site is supposed to be simple yet extendable. You can edit this to your hearts content, but I respectfully ask that you credit me in some way.
+1. Fork this repo (give star pls :D)
+2. Edit the files. (mainly the files in the `config` folder)
+3. Optionally, add more games. ([Get some here](https://gitlab.com/3kh0/3kh0-assets))
+4. Host it on GitHub Pages or your own server.
+5. Enjoy!
+
+> A known issue is game files, due to some games being massive, it will fail on many services, there is no straight forward fix for this, but you can try to host the files on your own server.
+
+## To-Do
+- Make it easier to add games
+- Make a better README.md

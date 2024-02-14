@@ -1,47 +1,15 @@
-$(document).ready(function() {
-  var animation = false,
-   animDur = 1000,
-   $row = $('.box__row'),
-   $cell = $('.box__row-cell'),
-   $content = $('.box__content'),
-   $closeBtn = $('.box__close');
+console.warn(
+  "%cHello!!", "color: red; font-weight: 600; background: yellow; padding: 0 5px; border-radius: 5px",
+  "Feel free to use anything you find here for your own projects, credit is appricated but not required! Visit my website at https://3kh0.net for more information."
+);
 
-  var active = function() {
-    if (!animation) {
-      animation = true;
-      var cellData = $(this).data('cell');
-      var $content = $('.box__content[data-content=' + cellData + ']');
-
-      $(this).addClass('active');
-      $content.addClass('show-content');
-      $closeBtn.addClass('box-close-active');
-    }
-
-    setTimeout(function() {
-      animation = false;
-    }, animDur);
-  }
-
-  var close = function() {
-    animation = true;
-    $cell.removeClass('active');
-    $content.removeClass('show-content');
-    $(this).removeClass('box-close-active');
-
-    setTimeout(function() {
-      animation = false;
-    }, animDur);
-  }
-
-  $row.on('click', '.box__row-cell', active);
-  $closeBtn.on('click', close);
-  $cell.on({
-    mouseenter: function() {
-      $cell.addClass('hover-cell');
-      $(this).removeClass('hover-cell');
-    },
-    mouseleave: function() {
-      $cell.removeClass('hover-cell');
-    }
-  });
-});
+const local_title = localStorage.getItem("title");
+const local_icon = localStorage.getItem("icon");
+if (window.localStorage.hasOwnProperty("title")) {
+  document.title = local_title;
+  console.log("Title set to: " + local_title);
+}
+if (window.localStorage.hasOwnProperty("icon")) {
+  document.querySelector("link[rel=icon]").href = local_icon;
+  console.log("Icon set to: " + local_icon);
+}
