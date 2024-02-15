@@ -1,49 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>silly cool awesome games</title>
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FGTPlay</title>
+  <link rel="icon" href="images/FGTPlayfavicon.png" type="images/FGTPlayfavicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    .games {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .game {
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .game:hover {
+      transform: scale(1.05);
+    }
+
+    .game img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
 </head>
+
 <body>
-    <nav>
-        <img src="images/tazbuch.png" alt="logo">
-        <h1>Trey's/Tazbuch's Game's!</h1>
-    </nav>
-    <div class="content">
 
-    <hr>
+  <header>
+    <div class="logo">
+      <img src="images/FGTPlayfavicon.png" alt="FGTPlay Logo">
+    </div>
+    <h1>FGTPlay</h1>
+    <p>(Previously known as Trey/Tazbuch's Games) You can also play FGTPlay by just going on https://tazbuch.space</p>
+  </header>
+  </div>
+  <div class="games">
+    <a href="games/bob-the-robber-2/" class="game"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
+    <a href="games/vex7/" class="game"><img src="images/vex7.jpeg" alt="vex 7"></a>
+    <a href="games/vex6/" class="game"><img src="images/vex6.jpeg" alt="vex 6"></a>
+    <a href="games/vex5/" class="game"><img src="images/vex5.jpg" alt="vex 5"></a>
+    <a href="games/moto-x3m/" class="game"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
+    <a href="games/retro-bowl/" class="game"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
+    <a href="games/drive-mad/" class="game"><img src="images/drive-mad.jpg" alt="drive mad"></a>
+    <a href="games/slope/" class="game"><img src="images/slope.jpg" alt="slope"></a>
+    <a href="games/motox3m2/" class="game"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
+    <a href="games/motox3m-winter/" class="game"><img src="images/motox3m-winter.png" alt="motox3m-winter"></a>
+    <a href="games/drift-boss/" class="game"><img src="images/driftboss.png" alt="drift boss"></a>
+    <a href="games/my-rusty-submarine/" class="game"><img src="images/mrs.png" alt="my-rusty-submarine"></a>
+    <a href="games/motox3m-spooky/" class="game"><img src="images/motox3mspooky.png" alt="motox3mspooky"></a>
+    <a href="games/mario/" class="game"><img src="images/smb.png" alt="super mario bros"></a>
+    <a href="games/chrome-dino/" class="game"><img src="images/chrome-dino.png" alt="chrome-dino"></a>
+    <a href="games/csgo-clicker/" class="game"><img src="images/csgo-clicker.png" alt="csgo-clicker"></a>
+    <a href="games/cookie-clicker/" class="game"><img src="images/cookie-clicker.png" alt="cookie-clicker"></a>
+    <a href="games/2048/" class="game"><img src="games/2048/favicon.png" alt="2048"></a>
+    <a href="games/baldis-basics/" class="game"><img src="games/baldis-basics/splash.png" alt="baldis basics"></a>
+    <a href="games/worlds-hardest-game" class="game"><img src="games/worlds-hardest-game/images/splash.jpg"
+        alt="worlds-hardest-game"></a>
+    <a href="games/worlds-hardest-game-2" class="game"><img
+        src="games/worlds-hardest-game-2/the-worlds-hardest-game-2.jpg" alt="worlds-hardest-game2"></a>
+    <a href="games/tv-static" class="game"><img src="games/tv-static/static.png" alt="tv static"></a>
+    <a href="games/subway-surfers" class="game"><img src="games/subway-surfers/img/splash.jpg" alt="subway surfers"></a>
+    <a href="games/subway-surfers-ny" class="game"><img src="games/subway-surfers-ny/NewYorkIcon.png" alt="subway surfers new york"></a>
+    <a href="games/soundboard" class="game"><img src="games/soundboard/soundboard.png" alt="sound board"></a>
+    <a href="games/sm64" class="game"><img src="games/sm64/logo.png" alt="supermario64"></a>
+    <a href="games/impossiblequiz" class="game"><img src="games/impossiblequiz/impossiblequiz.png" alt="the impossible quiz"></a>
+    <a href="games/just-fall" class="game"><img src="games/just-fall/favicon.png" alt="just fall"></a>
+    <a href="games/bloonstd" class="game"><img src="games/bloonstd/bloonstd.jpg" alt="bloonstd"></a>
+    <a href="games/bloonstd2" class="game"><img src="games/bloonstd2/bloonstd2.png" alt="bloonstd2"></a>
+    <a href="games/minecraftbeta" class="game"><img src="images/mcbeta.jfif" alt="minecraft beta"></a>
+    <a href="games/krunker" class="game"><img src="images/krunker.png" alt="krunker"></a>
+  </div>
 
-    <div class="search">
-        <input type="text" placeholder="Search..." oninput="">
-        <button><i class="fas fa-search"></i></button>
-    </div>
+  <footer>
+    <p>Made By Trey/Tazbuch!</p>
+  </footer>
 
-    <div id="games">
-        <a href="games/bob-the-robber-2/"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
-        <a href="games/vex7/"><img src="images/vex7.jpeg" alt="vex 7"></a>
-        <a href="games/vex6/"><img src="images/vex6.jpeg" alt="vex 6"></a>
-        <a href="games/vex5/"><img src="/games/vex-5/vex5.jpeg" alt="vex 5"></a>
-        <a href="games/moto-x3m/"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
-        <a href="games/retro-bowl/"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
-        <a href="games/drive-mad/"><img src="images/drive-mad.jpg" alt="drive mad"></a>
-        <a href="games/slope/"><img src="images/slope.jpg" alt="slope"></a>
-        <a href="games/motox3m2/"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
-        <a href="games/motox3m-winter/"><img src="images/motox3m-winter.png" alt="motox3m-winter"></a>
-        <a href="games/drift-boss/"><img src="images/driftboss.png" alt="drift boss"></a>
-        <a href="games/my-rusty-submarine/"><img src="images/mrs.png" alt="my-rusty-submarine"></a>
-        <a href="games/motox3m-spooky/"><img src="images/motox3mspooky.png" alt="motox3mspooky"></a>
-        <a href="games/mario/"><img src="images/mario.png" alt="mario"></a>
-        <a href="games/chrome-dino/"><img src="images/chrome-dino.png" alt="chrome-dino"></a>
-        <a href="games/csgo-clicker/"><img src="images/csgo-clicker.png" alt="csgo-clicker"></a>
-        <a href="games/cookie-clicker/"><img src="images/cookie-clicker.png" alt="csgo-clicker"></a>
-    </div>
-    </div>
-  <h2>made by trey/tazbuch</h2>
 </body>
-</html>
 
-<script src="script.js"></script>
+</html>
