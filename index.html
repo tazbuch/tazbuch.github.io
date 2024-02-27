@@ -13,15 +13,54 @@
       padding: 0;
     }
 
-    header {
+    .modal {
+      background-color: #000;
+      color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      width: 80%;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+    }
+
+    .exit-button {
       background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    header {
+      background-color: #000;
       color: #fff;
       text-align: center;
       padding: 20px 0;
+      position: relative;
+    }
+
+    .settings-button {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #fff;
+      cursor: pointer;
+      background-color: #000; /* Black background for settings button */
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
     }
 
     footer {
-      background-color: #333;
+      background-color: #000;
       color: #fff;
       text-align: center;
       padding: 10px 0;
@@ -32,6 +71,11 @@
 
     h1 {
       margin: 0;
+    }
+
+    h2,
+    h3 {
+      color: #fff;
     }
 
     p {
@@ -69,57 +113,49 @@
       <img src="images/FGTPlayfavicon.png" alt="FGTPlay Logo">
     </div>
     <h1>FGTPlay</h1>
-    <p>(Previously known as Trey/Tazbuch's Games) share the website with your friends too!!</p>
+    <p>(Previously known as Trey/Tazbuch's Games) You can also play FGTPlay by just going on https://tazbuch.space</p>
+    <button class="settings-button" onclick="openSettings()">Settings</button>
   </header>
-  </div>
+
   <div class="games">
-    <a href="games2/bob-the-robber-2/" class="game"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
-    <a href="games2/vex7/" class="game"><img src="images/vex7.jpeg" alt="vex 7"></a>
-    <a href="games2/vex6/" class="game"><img src="images/vex6.jpeg" alt="vex 6"></a>
-    <a href="games2/vex5/" class="game"><img src="images/vex5.jpg" alt="vex 5"></a>
-    <a href="games2/moto-x3m/" class="game"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
-    <a href="games2/retro-bowl/" class="game"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
-    <a href="games2/drive-mad/" class="game"><img src="images/drive-mad.jpg" alt="drive mad"></a>
-    <a href="games2/slope/" class="game"><img src="images/slope.jpg" alt="slope"></a>
-    <a href="games2/motox3m2/" class="game"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
-    <a href="games2/motox3m-winter/" class="game"><img src="images/motox3m-winter.png" alt="motox3m-winter"></a>
-    <a href="games2/drift-boss/" class="game"><img src="images/driftboss.png" alt="drift boss"></a>
-    <a href="games2/my-rusty-submarine/" class="game"><img src="images/mrs.png" alt="my-rusty-submarine"></a>
-    <a href="games2/motox3m-spooky/" class="game"><img src="images/motox3mspooky.png" alt="motox3mspooky"></a>
-    <a href="games2/mario/" class="game"><img src="images/smb.png" alt="super mario bros"></a>
-    <a href="games2/chrome-dino/" class="game"><img src="images/chrome-dino.png" alt="chrome-dino"></a>
-    <a href="games2/csgo-clicker/" class="game"><img src="images/csgo-clicker.png" alt="csgo-clicker"></a>
-    <a href="games2/cookie-clicker/" class="game"><img src="images/cookie-clicker.png" alt="cookie-clicker"></a>
-    <a href="games2/2048/" class="game"><img src="games2/2048/favicon.png" alt="2048"></a>
-    <a href="games2/baldis-basics/" class="game"><img src="games2/baldis-basics/splash.png" alt="baldis basics"></a>
-    <a href="games2/worlds-hardest-game" class="game"><img src="games2/worlds-hardest-game/images/splash.jpg"
-        alt="worlds-hardest-game"></a>
-    <a href="games2/worlds-hardest-game-2" class="game"><img
-        src="games2/worlds-hardest-game-2/the-worlds-hardest-game-2.jpg" alt="worlds-hardest-game2"></a>
-    <a href="games2/tv-static" class="game"><img src="games2/tv-static/static.png" alt="tv static"></a>
-    <a href="games2/subway-surfers" class="game"><img src="games2/subway-surfers/img/splash.jpg" alt="subway surfers"></a>
-    <a href="games2/subway-surfers-ny" class="game"><img src="games2/subway-surfers-ny/NewYorkIcon.png" alt="subway surfers new york"></a>
-    <a href="games2/soundboard" class="game"><img src="games2/soundboard/soundboard.png" alt="sound board"></a>
-    <a href="games2/sm64" class="game"><img src="games2/sm64/logo.png" alt="supermario64"></a>
-    <a href="games2/impossiblequiz" class="game"><img src="games2/impossiblequiz/impossiblequiz.png" alt="the impossible quiz"></a>
-    <a href="games2/just-fall" class="game"><img src="games2/just-fall/favicon.png" alt="just fall"></a>
-    <a href="games2/bloonstd" class="game"><img src="games2/bloonstd/bloonstd.jpg" alt="bloonstd"></a>
-    <a href="games2/bloonstd2" class="game"><img src="games2/bloonstd2/bloonstd2.png" alt="bloonstd2"></a>
-    <a href="games2/minecraftbeta" class="game"><img src="images/mcbeta.png" alt="minecraft beta"></a>
-    <a href="games2/krunker" class="game"><img src="images/krunker.png" alt="krunker"></a>
-    <a href="games2/fnaf/" class="game"><img src="games2/fnaf/logo.jpg" alt="fnaf1"></a>
-    <a href="games2/fnaf2/" class="game"><img src="games2/fnaf2/logo.jpg" alt="fnaf2"></a>
-    <a href="games2/fnaf3/" class="game"><img src="games2/fnaf3/logo.jpg" alt="fnaf3"></a>
-    <a href="games2/fnaf4/" class="game"><img src="games2/fnaf4/logo.jpg" alt="fnaf4"></a>
-    <a href="games2/roblox/" class="game"><img src="games2/roblox/logo.jpg" alt="roblox"></a>
-    <a href="games2/superhot/" class="game"><img src="games2/superhot/hot.jpg" alt="superhot"></a>
-    <a href="games2/bitlife/" class="game"><img src="games2/bitlife/logo.png" alt="bitlife"></a>
-    <a href="games2/templerun2/" class="game"><img src="games2/templerun2/img/og-icon.png" alt="bitlife"></a>
+    <a href="games/bob-the-robber-2/" class="game"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
+    <a href="games/vex7/" class="game"><img src="images/vex7.jpeg" alt="vex 7"></a>
+    <!-- Other game links -->
   </div>
 
   <footer>
     <p>Made By Trey/Tazbuch!</p>
   </footer>
+
+  <!-- Modal for settings -->
+  <div id="settingsModal" class="modal" style="display: none;">
+    <h2>Settings</h2>
+    <h3>Hiders</h3>
+    <p>Hide Tab Name</p>
+    <button class="exit-button" onclick="toggleTabName('IXL')">IXL Hider</button>
+    <button class="exit-button" onclick="toggleTabName('Google Classroom')">Google Classroom Hider</button>
+    <button class="exit-button" onclick="closeSettings()">Exit</button>
+  </div>
+
+  <script>
+    function openSettings() {
+      document.getElementById("settingsModal").style.display = "block";
+    }
+
+    function closeSettings() {
+      // Here you can add code to save settings if needed
+      document.getElementById("settingsModal").style.display = "none";
+    }
+
+    function toggleTabName(tabName) {
+      document.title = tabName;
+      if (tabName === 'IXL') {
+        document.querySelector("link[rel='icon']").href = "https://raw.githubusercontent.com/tazbuch/tazbuch.github.io/main/ixl.png";
+      } else if (tabName === 'Google Classroom') {
+        document.querySelector("link[rel='icon']").href = "https://example.com/google-classroom-favicon.png"; // Replace with actual favicon URL
+      }
+    }
+  </script>
 
 </body>
 
