@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>tazbuch.space</title>
+    <title>tazbuch loves her!</title>
     <link rel="icon" type="image/x-icon" href="https://tazbuch.space/media/favicon.png">
     <!-- embed title -->
-    <meta content="tazbuch's website:D" property="og:title" />
+    <meta content="tazbuch loves her!" property="og:title" />
     <!-- embed description -->
-    <meta content="@tazbuchh on the cord" property="og:description" />
+    <meta content="tazbuch#2176/@tazbuch on the cord" property="og:description" />
     <!-- embed link -->
     <meta content="https://tazbuch.space/" property="og:url" />
     <!-- embed image -->
@@ -17,352 +18,65 @@
     <!-- embed color -->
     <meta content="#36c2bd" data-react-helmet="true" name="theme-color" />
 </head>
+
 <style>
     #video-background {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    }   
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .button-container {
+        text-align: center;
+        margin-top: 20px; /* Adjust margin-top as needed */
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #36c2bd; /* Adjust button color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 10px;
+    }
 </style>
+
 <body>
     <script>
-        function text() {
-            const textBefore = document.getElementById('special');
-            const background = document.getElementById('bleh');
-            const videoBackground = document.getElementById('video-background');
-
-            const text = document.createElement('input');
-            text.type = 'text';
-            text.placeholder = 'enter the secret key, fella!';
-            
-            textBefore.replaceWith(text);
-        
-            document.onkeydown = function(e) {
-                if (e.keyCode == 13) {
-                    if (text.value == 'spederman') {
-                        videoBackground.src = 'https://tazbuch.space/media/sped.mp4'
-                        background.replaceWith(videoBackground)
-                        videoBackground.style.display = 'block';
-                        videoBackground.play();
-                        if (videoBackground.requestFullscreen) {
-                            videoBackground.requestFullscreen(); // normal fullscreen
-                        } else if (videoBackground.webkitRequestFullscreen) { 
-                            videoBackground.webkitRequestFullscreen(); // safari fullscreen
-                        } else if (videoBackground.msRequestFullscreen) { 
-                            videoBackground.msRequestFullscreen(); // ie fullscreen
-                        }
-                    } else if (text.value == 'adminplace') {
-                        document.body.innerHTML = "ip logged";
-                    } else if (text.value == 'didyoupray') {
-                        videoBackground.src = 'https://tazbuch.space/media/didyoupray.mp4'
-                        background.replaceWith(videoBackground)
-                        videoBackground.style.display = 'block';
-                        videoBackground.play();
-                        if (videoBackground.requestFullscreen) {
-                            videoBackground.requestFullscreen(); // normal fullscreen
-                        } else if (videoBackground.webkitRequestFullscreen) { 
-                            videoBackground.webkitRequestFullscreen(); // safari fullscreen
-                        } else if (videoBackground.msRequestFullscreen) { 
-                            videoBackground.msRequestFullscreen(); // ie fullscreen
-                        }
-                    } else if (text.value == 'capl') {
-                        background.style.backgroundImage = 'url("https://tazbuch.space/media/capl.techontop.png")';
-                    } else if (text.value == 'nick') {
-                        background.style.backgroundImage = 'url("https://tazbuch.space/media/capl.techontop.png")';
-                    } else {
-                        text.replaceWith(textBefore);
-                    }
-                }
-            }
+        function redirectToCardahsji() {
+            window.location.href = "https://cardahsji.com";
         }
-        
+
+        function redirectToWrath() {
+            window.location.href = "https://wrath.lol";
+        }
+
+        function redirectToFgtlayt() {
+            window.location.href = "https://fgtlayt.lol";
+        }
     </script>
     <div class="fixed-background" id="bleh">
         <video id="video-background" loop muted>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
+            <source src="" type="video/mp4"> Your browser does not support the video tag.
         </video>
-        <p id="special" class="text" onclick="text()">hi this is my website, i own some other ones too!! i own a "company" (not officialy) but its called cardashi! and yeah! add my discord @tazbuchh</p>
+        <p id="special" class="text" onclick="text()">tazbuch loves her sm!</p>
+        <a class="text" href="https://open.spotify.com/track/6Ox1rvlwEpB49drasQm6RF?si=5180e81547004b43" target="_blank">Counted Updated V2 (if i rememeber to update!)</a>
         <footer>
             <a href="mailto:tazbuch@tazbuch.space">tazbuch@tazbuch.space</a>
         </footer>
+        <div class="button-container">
+            <button class="button" onclick="redirectToCardahsji()">Button 1</button>
+            <button class="button" onclick="redirectToWrath()">Button 2</button>
+            <button class="button" onclick="redirectToFgtlayt()">Button 3</button>
+        </div>
     </div>
-    <!-- This Script is from www.htmlfreecodes.com, Provided by: Mahmood Bina -->
-<script type='text/javascript' src='http://m.free-codes.org/gh.php?id=2001'></script>
-
-<!-- This Script is from www.htmlfreecodes.com, Provided by: Mahmood Bina -->
-<script type='text/javascript' src='http://m.free-codes.org/gh.php?id=2001'></script>
-<script>
-// Set the number of snowflakes (more than 30 - 40 not recommended)
-var snowmax=35
-
-// Set the colors for the snow. Add as many colors as you like
-var snowcolor=new Array("#aaaacc","#ddddFF","#ccccDD")
-
-// Set the fonts, that create the snowflakes. Add as many fonts as you like
-var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
-
-// Set the letter that creates your snowflake (recommended:*)
-var snowletter="*"
-
-// Set the speed of sinking (recommended values range from 0.3 to 2)
-var sinkspeed=0.6
-
-// Set the maximal-size of your snowflaxes
-var snowmaxsize=22
-
-// Set the minimal-size of your snowflaxes
-var snowminsize=8
-
-// Set the snowing-zone
-// Set 1 for all-over-snowing, set 2 for left-side-snowing 
-// Set 3 for center-snowing, set 4 for right-side-snowing
-var snowingzone=3
-
-///////////////////////////////////////////////////////////////////////////
-// CONFIGURATION ENDS HERE
-///////////////////////////////////////////////////////////////////////////
-
-
-// Do not edit below this line
-var snow=new Array()
-var marginbottom
-var marginright
-var timer
-var i_snow=0
-var x_mv=new Array();
-var crds=new Array();
-var lftrght=new Array();
-var browserinfos=navigator.userAgent 
-var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
-var ns6=document.getElementById&&!document.all
-var opera=browserinfos.match(/Opera/)  
-var browserok=ie5||ns6||opera
-
-function randommaker(range) {		
-	rand=Math.floor(range*Math.random())
-    return rand
-}
-
-function initsnow() {
-	if (ie5 || opera) {
-		marginbottom = document.body.clientHeight
-		marginright = document.body.clientWidth
-	}
-	else if (ns6) {
-		marginbottom = window.innerHeight
-		marginright = window.innerWidth
-	}
-	var snowsizerange=snowmaxsize-snowminsize
-	for (i=0;i<=snowmax;i++) {
-		crds[i] = 0;                      
-    	lftrght[i] = Math.random()*15;         
-    	x_mv[i] = 0.03 + Math.random()/10;
-		snow[i]=document.getElementById("s"+i)
-		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
-		snow[i].size=randommaker(snowsizerange)+snowminsize
-		snow[i].style.fontSize=snow[i].size
-		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
-		snow[i].sink=sinkspeed*snow[i].size/5
-		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
-		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
-		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
-		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
-		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
-		snow[i].style.left=snow[i].posx
-		snow[i].style.top=snow[i].posy
-	}
-	movesnow()
-}
-
-function movesnow() {
-	for (i=0;i<=snowmax;i++) {
-		crds[i] += x_mv[i];
-		snow[i].posy+=snow[i].sink
-		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
-		snow[i].style.top=snow[i].posy
-		
-		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
-			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
-			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
-			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
-			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
-			snow[i].posy=0
-		}
-	}
-	var timer=setTimeout("movesnow()",50)
-}
-
-for (i=0;i<=snowmax;i++) {
-	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
-}
-if (browserok) {
-	window.onload=initsnow
-}
-</script>
-<a target="_blank" href="http://free-web-tools.com" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">free web tools</a><a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none">Html Codes</a>
-<FORM name="Keypad" action="">
-<TABLE>
-<B>
-<TABLE border=2 width=50 height=60 cellpadding=1 cellspacing=5>
-<TR>
-<TD colspan=3 align=middle>
-<input name="ReadOut" type="Text" size=24 value="0" width=100%>
-</TD>
-<TD
-</TD>
-<TD>
-<input name="btnClear" type="Button" value="  C  " onclick="Clear()">
-</TD>
-<TD><input name="btnClearEntry" type="Button" value="  CE " onclick="ClearEntry()">
-</TD>
-</TR>
-<TR>
-<TD>
-<input name="btnSeven" type="Button" value="  7  " onclick="NumPressed(7)">
-</TD>
-<TD>
-<input name="btnEight" type="Button" value="  8  " onclick="NumPressed(8)">
-</TD>
-<TD>
-<input name="btnNine" type="Button" value="  9  " onclick="NumPressed(9)">
-</TD>
-<TD>
-</TD>
-<TD>
-<input name="btnNeg" type="Button" value=" +/- " onclick="Neg()">
-</TD>
-<TD>
-<input name="btnPercent" type="Button" value="  % " onclick="Percent()">
-</TD>
-</TR>
-<TR>
-<TD>
-<input name="btnFour" type="Button" value="  4  " onclick="NumPressed(4)">
-</TD>
-<TD>
-<input name="btnFive" type="Button" value="  5  " onclick="NumPressed(5)">
-</TD>
-<TD>
-<input name="btnSix" type="Button" value="  6  " onclick="NumPressed(6)">
-</TD>
-<TD>
-</TD>
-<TD align=middle><input name="btnPlus" type="Button" value="  +  " onclick="Operation('+')">
-</TD>
-<TD align=middle><input name="btnMinus" type="Button" value="   -   " onclick="Operation('-')">
-</TD>
-</TR>
-<TR>
-<TD>
-<input name="btnOne" type="Button" value="  1  " onclick="NumPressed(1)">
-</TD>
-<TD>
-<input name="btnTwo" type="Button" value="  2  " onclick="NumPressed(2)">
-</TD>
-<TD>
-<input name="btnThree" type="Button" value="  3  " onclick="NumPressed(3)">
-</TD>
-<TD>
-</TD>
-<TD align=middle><input name="btnMultiply" type="Button" value="  *  " onclick="Operation('*')">
-</TD>
-<TD align=middle><input name="btnDivide" type="Button" value="   /   " onclick="Operation('/')">
-</TD>
-</TR>
-<TR>
-<TD>
-<input name="btnZero" type="Button" value="  0  " onclick="NumPressed(0)">
-</TD>
-<TD>
-<input name="btnDecimal" type="Button" value="   .  " onclick="Decimal()">
-</TD>
-<TD colspan=3>
-</TD>
-<TD>
-<input name="btnEquals" type="Button" value="  =  " onclick="Operation('=')">
-</TD>
-</TR>
-</TABLE>
-</TABLE>
-</B>
-</FORM>
-</CENTER>
-<font face="Verdana, Arial, Helvetica" size=2>
-<SCRIPT LANGUAGE="JavaScript">
-<!-- Begin
-var FKeyPad = document.Keypad;
-var Accumulate = 0;
-var FlagNewNum = false;
-var PendingOp = "";
-function NumPressed (Num) {
-if (FlagNewNum) {
-FKeyPad.ReadOut.value  = Num;
-FlagNewNum = false;
-   }
-else {
-if (FKeyPad.ReadOut.value == "0")
-FKeyPad.ReadOut.value = Num;
-else
-FKeyPad.ReadOut.value += Num;
-   }
-}
-function Operation (Op) {
-var Readout = FKeyPad.ReadOut.value;
-if (FlagNewNum && PendingOp != "=");
-else
-{
-FlagNewNum = true;
-if ( '+' == PendingOp )
-Accumulate += parseFloat(Readout);
-else if ( '-' == PendingOp )
-Accumulate -= parseFloat(Readout);
-else if ( '/' == PendingOp )
-Accumulate /= parseFloat(Readout);
-else if ( '*' == PendingOp )
-Accumulate *= parseFloat(Readout);
-else
-Accumulate = parseFloat(Readout);
-FKeyPad.ReadOut.value = Accumulate;
-PendingOp = Op;
-   }
-}
-function Decimal () {
-var curReadOut = FKeyPad.ReadOut.value;
-if (FlagNewNum) {
-curReadOut = "0.";
-FlagNewNum = false;
-   }
-else
-{
-if (curReadOut.indexOf(".") == -1)
-curReadOut += ".";
-   }
-FKeyPad.ReadOut.value = curReadOut;
-}
-function ClearEntry () {
-FKeyPad.ReadOut.value = "0";
-FlagNewNum = true;
-}
-function Clear () {
-Accumulate = 0;
-PendingOp = "";
-ClearEntry();
-}
-function Neg () {
-FKeyPad.ReadOut.value = parseFloat(FKeyPad.ReadOut.value) * -1;
-}
-function Percent () {
-FKeyPad.ReadOut.value = (parseFloat(FKeyPad.ReadOut.value) / 100) * parseFloat(Accumulate);
-}
-// End -->
-</SCRIPT>
-
-<a target="_blank" href="http://free-web-tools.com" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">free web tools</a><a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none">Html Codes</a>
 </body>
+
 </html>
