@@ -1,108 +1,94 @@
-<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_LYtBOh"></div><head>
-    <title>tazbuch.space</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="tazbuch.space">
-    <meta property="og:description" content="my recent official discord account">
-    <meta name="theme-color" data-react-helmet="true" content="#2B2D31">
-    <style>
-        @font-face {
-            font-family: "Cascadia";
-            src: url('/imgs/Cascadia.ttf') format('truetype');
-        }
-  
-        * {
-            font-family: Cascadia;
-            font-weight: medium;
-        }
-  
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-  
-        .background {
-            position: relative;
-            height: 100vh;
-            width: 100vw;
-            background-color: #050505;
-            z-index: -2;
-        }
-  
-        .full-page-overlay {
-            position: absolute;
-            transition: opacity 1s ease-in-out;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-color: black; 
-        }
-  
-        .discord-text {
-            color: white;
-            cursor: pointer;
-        }
-  
-        .discord-text:hover {
-            color: #ffffff;
-        }
-  
-        .discord-prefix {
-            color: #757575;
-        }
-  
-        .text-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 1;
-            color: white; 
-        }
-    </style>
-  </head>
-  <body>
-  
-  <div class="background">
-    <div class="full-page-overlay">
-    </div>
-  </div>
-  
-  <input type="text" value="discord://-/users/720543527171391518" id="discordLink" style="position: absolute; left: -9999px;">
-  
-  <button onclick="copyDiscordLink()" style="position: absolute; left: -9999px;">Copy</button>
-  
-  <div class="text-container">
-    <p><span class="discord-prefix">my current discord is:</span> <span class="discord-text" onclick="openDiscordProfile()">tazbuch</span></p>
-  </div>
-  
-  <script>
-    function copyDiscordLink() {
-        var discordLinkInput = document.getElementById("discordLink");
-  
-        discordLinkInput.select();
-        discordLinkInput.setSelectionRange(0, 99999); 
-  
-        document.execCommand("copy");
-  
-        alert("Copied to clipboard");
-  
-        setTimeout(function() {
-            openDiscordProfile();
-        }, 3000); 
-    }
-  
-    function openDiscordProfile() {
-        var discordLink = document.getElementById("discordLink").value;
-        window.location.href = discordLink;
-    }
-  </script>
-  
-  
-  
-  </body></html>
+<html>
+    <head>
+        <style>
+            html {
+                margin-top: 15px;
+                background-color: #000000;
+                color: white;
+                font-family: 'Rubik', sans-serif;
+                text-align: center;
+            }
+            h1 {
+                position: absolute;
+                top: 45%;
+                right: 50%;
+                transform: translate(50%);
+                font-weight: 100;
+                font-size: 1.5rem;
+            }
+            button {
+                padding: 20px 40px 20px 40px;
+                height: auto;
+                border: none;
+                color: var(--light-color);
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.3rem;
+                font-family: 'Rubik', sans-serif;
+                cursor: pointer;
+                background-color: #f75dfc;
+                border-radius: 20px;
+                transition: opacity 0.3s ease;
+                transition: transform 0.1s ease;
+                margin-top: 200px;
+            }
+
+            button:hover {
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Press [Enter] or tap/click anywhere to redirect</h1>
+        
+        <script>
+            function Go() {
+                let url = 'nyafilmer.gg';
+                maskedWindow = window.open();
+
+                const doc = maskedWindow.document;
+                doc.title = '';
+
+                let embed = doc.createElement('embed');
+                
+                if (url.includes('https://') || url.includes('http://')) {
+                    embed.src = url;
+                } else {
+                    embed.src = 'https://' + url;
+                }
+
+                embed.width = '100%';
+                embed.height = '100%';
+                embed.style.position = 'fixed';
+                embed.style.top = '0';
+                embed.style.left = '0';
+
+                let script = document.createElement('script');
+
+                script.innerHTML = `
+                    window.onbeforeunload = function() {
+                        return "reloading the site will end the aboutblank session. Are you sure you want to continue?";
+                    };
+                `;
+                
+                doc.body.appendChild(embed);
+                doc.body.appendChild(script);
+
+                window.location.href = 'https://google.com';
+                window.close();
+            }
+
+            document.addEventListener('keyup', (event) => {
+                if (event.keyCode === 13) {
+                    Go();
+                }
+            });
+            document.body.addEventListener('click', () => {
+                Go();
+            });
+
+            Go();
+        </script>
+    </body>
+</html>
