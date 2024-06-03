@@ -1,63 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>tazbuch.space</title>
-    <link rel="icon" type="image/x-icon" href="https://tazbuch.space/media/favicon.png">
-    <!-- embed title -->
-    <meta content="yapbuch" property="og:title" />
-    <!-- embed description -->
-    <meta content="tazbuh" property="og:description" />
-    <!-- embed link -->
-    <meta content="https://tazbuch.space/" property="og:url" />
-    <!-- embed image -->
-    <meta content="/media/favicon.png" property="og:image" />
-    <!-- embed color -->
-    <meta content="#36c2bd" data-react-helmet="true" name="theme-color" />
+    <title>tazbuchy :D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1108888492991324272/1247031693563396146/IMG_6215.jpg?ex=665e8c44&is=665d3ac4&hm=ec65a9900f7e1976565118f948c9aebbaadf3264b229dba93ccbb632dc5424a7&" type="image/jpg">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        nav {
+            background: rgba(51, 51, 51, 0.9);
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        section {
+            padding: 4em 2em;
+            background-color: white;
+            margin: 1em auto;
+            max-width: 900px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            padding: 2em 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .container {
+            padding-top: 60px;
+        }
+    </style>
 </head>
-
-<style>
-    #video-background {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-
-    .button-container {
-        text-align: center;
-        margin-top: 20px; /* Adjust margin-top as needed */
-    }
-
-    .button {
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #36c2bd; /* Adjust button color */
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin: 0 10px;
-    }
-</style>
-
 <body>
-    <div class="fixed-background" id="bleh">
-        <video id="video-background" loop muted>
-            <source src="" type="video/mp4"> Your browser does not support the video tag.
-        </video>
-        <p id="special" class="text" onclick="text()">tazbuch.space</p>
-        <a class="text" href="https://cardashi.lol" target="_blank">hi this is my soo cool website!! </a>
-        <footer>
-            <a href="mailto:tazbuch@tazbuch.space">tazbuch@tazbuch.space</a>
-        </footer>
+    <header>
+        <h1>Welcome to tazbuch.space</h1>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>hi my name tazbuch or if you know me irl you probably call me trey! so erm i like riding my bike, listening to music, and hangout with friends!! i like "indie" or "hip-hop" songs. i like kanye, alex g, and XXXTentacion!</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my recent projects:</p>
+        <ul>
+            <li>wrath games: my game website!! </li>
+            <li>cardashi: basically my "company" i own, its the owner of all of my websites.</li>
+            <li>gtag games: not as much but i used to work on them.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>if you want to talk/contact me, add me on discord. @tazbuchh/tazbuch#9219</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 cardashi. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
